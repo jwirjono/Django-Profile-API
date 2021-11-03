@@ -37,7 +37,7 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
 
     objects = UserProfileManager()
 
-    # OVERRIDING USERNAME_FIELD with email
+    # OVERRIDING USERNAME_FIELD with email during Login
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS =['name']
 
